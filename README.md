@@ -2,7 +2,8 @@
 
 Ligunaguem: <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" width=20px height=20px/>
 
-<img src="Minesweeper.png" alt="Minesweeper-example-image">
+## Linguagem:
+<code><img src="Minesweeper.png" alt="Minesweeper-example-image"></code>
 
 > Campo minado criando com a utilização de javascript puro (vanilla) e corporizado com HTML e CSS.
 
