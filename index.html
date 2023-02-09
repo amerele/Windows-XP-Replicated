@@ -11,28 +11,43 @@
 
 <body>
   <div class=container>
-    <div class="app"><img src="sweeper.webp" width='64px'alt="">Campo minado</div>
-    <label for="dificuldade">Escolha uma dificuldade:</label>
-    <select id="diff">
-      <option value="normal">Normal</option>
-      <option value="hard">Difícil</option>
-    </select>
-    </label>
-    <button id=restart> Reiniciar</button>
+    <!-- icones na area de trabalho -->
+    <div class="app"><img src="media/sweeper.webp" width='64px' alt="">Campo minado</div>
+
+    <!-- Janela do jogo -->
     <div class='cont'>
       <div class="window">
-        <div class="window-left"><img class='icon'src="sweeper.webp"> Campo Minado</div>
+        <div class="window-left"><img class='icon' src="media/sweeper.webp"> Campo Minado</div>
         <div class='buttons'>
-          <button class="buttons-window">-</button>
-          <button class="buttons-window">&#9634;</button>
-        <button class="exit">X</button>
+          <button class="buttons-window minimizar">-</button>
+          <button class="exit">X</button>
         </div>
       </div>
+
+      <!-- Tabela in-game -->
       <table id=tabela></table>
+
+      <!-- Escolha a dificuldade: -->
+      <div class="dificuldade">
+        <label for="dificuldade">Escolha uma dificuldade:</label>
+        <select id="diff">
+          <option value="normal">Normal</option>
+          <option value="hard">Difícil</option>
+        </select>
+        </label>
+        <button id=restart> Reiniciar</button>
+      </div>
     </div>
+
+
+    <!-- Barra de tarefas -->
     <div class="taskbar">
-      <div class="iniciar"><img src='janelas.png' />Iniciar</div>
-      <div class="minesweeper"><img class='icon'src="sweeper.webp" alt=""> Campo Minado</div>
+      <div class="taskbar-left">
+        <div class="iniciar"><img src='media/janelas.png' />Iniciar</div>
+        <div class="minesweeper"><img class='icon' src="media/sweeper.webp" alt=""> Campo Minado</div>
+      </div>
+      <div class="timer">aa</div>
+
     </div>
     <script src="script.js"></script>
 </body>

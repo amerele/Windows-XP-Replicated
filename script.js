@@ -1,20 +1,60 @@
+// Campo Minado
 let tabela = document.querySelector("#tabela");
 let reiniciar = document.querySelector("#restart");
 let dif = document.querySelector("#diff");
+// Windows
 let fechar = document.querySelector(".exit");
 let abrir = document.querySelector('.app');
+let minimizar = document.querySelector('.minimizar');
+let janela = document.querySelector('.minesweeper');
+let timer = document.querySelector('.timer');
 
 let modelo = [];
 let dificuldade = [];
+let minimizado = false;
 
+let time = new Date();
 const init = (dificuldade) => {
   tabela.onclick = clicar;
   tabela.oncontextmenu = bandeirinha;
+  timer.innerHTML = ` ${time.getHours()}:${time.getMinutes()}`
   novoJogo();
   criarBombas();
   gerarNumeros();
-  console.log(modelo);
+
+  //console.log(modelo);
 };
+
+// Funções Windows XP
+fechar.onclick = () =>{
+  document.querySelector('.cont').style.display = 'none'
+  document.querySelector('.minesweeper').style.display = 'none'
+}
+abrir.ondblclick = () =>{
+  document.querySelector('.cont').style.display = 'block'
+  document.querySelector('.minesweeper').style.display = 'flex'
+  init(dificuldade)
+  abrir.style.background = '#ffffff80';
+  abrir.style.borderColor = '#ffffff90';
+}
+const minimiza = () =>{
+  if (minimizado == false) {
+    document.querySelector('.cont').classList.add('minimizado')
+    minimizado = true
+  } else {
+    document.querySelector('.cont').classList.remove('minimizado')
+    minimizado = false
+  }
+  console.log(time.getHours(), time.getMinutes)
+}
+
+minimizar.onclick = minimiza
+janela.onclick = minimiza
+document.querySelector('body').onclick= () =>{
+  abrir.style.background = 'transparent';
+  abrir.style.borderColor = 'transparent';
+}
+//GFunções Campo Minado
 
 const novoJogo = () => {
   let tbody = "";
@@ -137,14 +177,5 @@ const changedif = () =>{
   init(dificuldade);
 }
 
-fechar.onclick = () =>{
-  document.querySelector('.cont').style.display = 'none'
-  document.querySelector('.minesweeper').style.display = 'none'
-  abrir.style.display = 'flex'
-}
-abrir.ondblclick = () =>{
-  abrir.style.display = 'none'
-  document.querySelector('.cont').style.display = 'block'
-}
 reiniciar.onclick = changedif;
 onload = changedif;
