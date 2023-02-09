@@ -10,8 +10,10 @@
 ## Projeto:
 <img src="media/Minesweeper-example.png" alt="Minesweeper-example-image">
 
-> Campo minado criando com a utilização de javascript puro (vanilla) e corporizado com HTML e CSS.
-> Background e funções simulando ao Windows XP para nos trazer aquela nostalgia.
+>Foto Campo Minado
+
+Campo minado criando com a utilização de javascript puro (vanilla) e corporizado com HTML e CSS.
+Background e funções simulando ao Windows XP para nos trazer aquela nostalgia.
 
 Para ver o projeto hospedado, acesse:
 
