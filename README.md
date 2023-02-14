@@ -15,6 +15,16 @@
 Campo minado criando com a utilização de javascript puro (vanilla) e corporizado com HTML e CSS.
 Background e funções simulando ao Windows XP para nos trazer aquela nostalgia.
 
+## Ajustes e Melhorias
+
+O projeto ainda está sendo desenvolvido, tendo suas próximas atualizações voltadas para trazer mais funcionalidades semelhantes ao Windows XP.
+
+- [x] Criação base da interface do sistema operacinal
+- [x] Funcionalidades 'minimizar' e 'fechar' aplicativos abertos.
+- [x] Campo Minado
+- [ ] Menu Iniciar
+- [ ] Possibilidade de abrir mais tarefas ao mesmo tempo e fazer com que interajam entre si (ex: lixeira)
+
 Para ver o projeto hospedado, acesse:
 
 https://amerele.github.io/mine-sweeper-JS/
