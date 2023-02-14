@@ -1,4 +1,4 @@
-# Mine Sweeper - Campo Minado
+# Windows XP + Campo Minado
 
 
 
