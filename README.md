@@ -29,4 +29,4 @@ To see my project on live, please access:
 
 https://amerele.github.io/mine-sweeper-JS/
 
-[⬆ Back to top](#nome-do-projeto)<br>
+[⬆ voltar_ao_topo](#nome-do-projeto)<br>
