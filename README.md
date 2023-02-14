@@ -1,8 +1,8 @@
-# Windows XP + Campo Minado
+# Windows XP + Minesweeper
 
 
 
-## Skills Utilizadas:
+## Used technologies:
 <code><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" width=32px height=32px/></code>
 <code><img height="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="HTML5"/></code>
 <code><img height="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" alt="CSS"/></code>
@@ -10,23 +10,23 @@
 ## Projeto:
 <img src="media/Minesweeper-example.png" alt="Minesweeper-example-image">
 
->Foto Campo Minado
+>Minesweeper picture
 
-Campo minado criando com a utilização de javascript puro (vanilla) e corporizado com HTML e CSS.
-Background e funções simulando ao Windows XP para nos trazer aquela nostalgia.
+Windows XP basic funcionalities and style cloned on a website.
+By now, Minesweeper Shortcut is avaliable at the "Desktop" and playable.
 
-## Ajustes e Melhorias
+## Project logs and upgrades
 
-O projeto ainda está sendo desenvolvido, tendo suas próximas atualizações voltadas para trazer mais funcionalidades semelhantes ao Windows XP.
+This project still being developed...
 
-- [x] Criação base da interface do sistema operacinal
-- [x] Funcionalidades 'minimizar' e 'fechar' aplicativos abertos.
-- [x] Campo Minado
-- [ ] Menu Iniciar
-- [ ] Possibilidade de abrir mais tarefas ao mesmo tempo e fazer com que interajam entre si (ex: lixeira)
+- [x] Interface of Windows XP created.
+- [x] 'Minimize' and 'Close' functions created for "app window"
+- [x] Minesweeper
+- [ ] Start Menu
+- [ ] Multi-task opening apps
 
-Para ver o projeto hospedado, acesse:
+To see my project on live, please access:
 
 https://amerele.github.io/mine-sweeper-JS/
 
-[⬆ Voltar ao topo](#nome-do-projeto)<br>
+[⬆ Back to top](#nome-do-projeto)<br>
