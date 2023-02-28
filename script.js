@@ -26,18 +26,24 @@ const init = (dificuldade) => {
 };
 
 // Funções Windows XP
-fechar.onclick = () =>{
+fechar.onclick = () => {
   document.querySelector('.cont').style.display = 'none'
   document.querySelector('.minesweeper').style.display = 'none'
 }
-abrir.ondblclick = () =>{
+document.querySelectorAll('.soft').forEach((element) => {
+  element.onclick = () => {
+    element.style.background = '#ffffff80';
+    element.borderColor = '#ffffff90';
+  }
+
+});
+abrir.ondblclick = (event) => {
   document.querySelector('.cont').style.display = 'block'
   document.querySelector('.minesweeper').style.display = 'flex'
   init(dificuldade)
-  abrir.style.background = '#ffffff80';
-  abrir.style.borderColor = '#ffffff90';
+
 }
-const minimiza = () =>{
+const minimiza = () => {
   if (minimizado == false) {
     document.querySelector('.cont').classList.add('minimizado')
     minimizado = true
@@ -48,12 +54,16 @@ const minimiza = () =>{
   console.log(time.getHours(), time.getMinutes)
 }
 
+document.querySelector('.container').onclick = () => {
+  document.querySelectorAll('.soft').forEach((element) =>{
+    element.style.backgroundColor = 'transparent'
+    element.style.borderColor = 'transparent'
+  })
+}
 minimizar.onclick = minimiza
 janela.onclick = minimiza
-document.querySelector('body').onclick= () =>{
-  abrir.style.background = 'transparent';
-  abrir.style.borderColor = 'transparent';
-}
+
+
 //GFunções Campo Minado
 
 const novoJogo = () => {
@@ -79,27 +89,27 @@ const criarBombas = () => {
     modelo[x][y] = -1;
   }
 };
-const aumentarArredores = (x, y) =>{
-    var count = 0;
-    for (let i = x - 1; i <= x + 1; i++) {
-        for (let j = y - 1; j <= y + 1; j++) {
-            if (i >= 0 && i < linhas && j >= 0 && j < colunas) {
-                if (modelo[i][j] == -1) {
-                    count++;
-                }
-            }
+const aumentarArredores = (x, y) => {
+  var count = 0;
+  for (let i = x - 1; i <= x + 1; i++) {
+    for (let j = y - 1; j <= y + 1; j++) {
+      if (i >= 0 && i < linhas && j >= 0 && j < colunas) {
+        if (modelo[i][j] == -1) {
+          count++;
         }
+      }
     }
-    modelo[x][y] = count;
+  }
+  modelo[x][y] = count;
 }
-const gerarNumeros = () =>{
-    for (let i = 0; i <= linhas; i++) {
-        for (let j = 0; j <= colunas; j++) {
-            if (modelo[i][j] != -1) {
-                aumentarArredores(i, j);
-            }
-        }
+const gerarNumeros = () => {
+  for (let i = 0; i <= linhas; i++) {
+    for (let j = 0; j <= colunas; j++) {
+      if (modelo[i][j] != -1) {
+        aumentarArredores(i, j);
+      }
     }
+  }
 }
 
 const mostrarBombas = () => {
@@ -130,7 +140,7 @@ const checarNulos = (x, y) => {
               break;
             default:
               cell.innerHTML = modelo[i][j];
-              cell.className = "n"+modelo[i][j];
+              cell.className = "n" + modelo[i][j];
           }
         }
       }
@@ -147,33 +157,33 @@ const clicar = (event) => {
       mostrarBombas();
       break;
     case 0:
-      checarNulos(x,y);
+      checarNulos(x, y);
       break;
     default:
       square.innerHTML = modelo[x][y];
-      square.className = "n"+modelo[x][y];
+      square.className = "n" + modelo[x][y];
       break;
   }
 };
-const bandeirinha = (event) =>{
+const bandeirinha = (event) => {
   var square = event.target;
-  if (square.className == "bandeira"){
+  if (square.className == "bandeira") {
     square.innerHTML = "";
     square.className = "";
   } else {
     square.className = "bandeira";
     square.innerHTML = "&#127988"
-  } 
+  }
   return false;
 }
-const changedif = () =>{
-  switch(dif.value){
+const changedif = () => {
+  switch (dif.value) {
     case "normal":
       dificuldade = [linhas = 10, colunas = 10, bombas = 15];
       break;
     default:
       dificuldade = [linhas = 15, colunas = 15, bombas = 30];
-    }
+  }
   init(dificuldade);
 }
 

@@ -10,9 +10,10 @@
 </head>
 
 <body>
+  <!-- icones na area de trabalho -->
+  <div class="app soft"><img src="media/sweeper.webp" width='64px' alt="">Campo minado</div>
+    <div class="lixeira soft"><img src="media/lixeira.png" width='64px'>Lixeira</div>
   <div class=container>
-    <!-- icones na area de trabalho -->
-    <div class="app"><img src="media/sweeper.webp" width='64px' alt="">Campo minado</div>
 
     <!-- Janela do jogo -->
     <div class='cont'>
@@ -23,10 +24,6 @@
           <button class="exit">X</button>
         </div>
       </div>
-
-      <!-- Tabela in-game -->
-      <table id=tabela></table>
-
       <!-- Escolha a dificuldade: -->
       <div class="dificuldade">
         <label for="dificuldade">Escolha uma dificuldade:</label>
@@ -37,7 +34,11 @@
         </label>
         <button id=restart> Reiniciar</button>
       </div>
+    
+      <!-- Tabela in-game -->
+      <table id=tabela></table>
     </div>
+      
 
 
     <!-- Barra de tarefas -->
