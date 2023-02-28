@@ -1,22 +1,29 @@
-# Mine Sweeper - Campo Minado
+# Windows XP + Minesweeper
 
+Windows XP basic funcionalities and style cloned on a website.<br>
+By now, Minesweeper Shortcut is avaliable at the "Desktop" and playable.
 
+## 💻 Used technologies:
+<code><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/></code>
+<code><img height="32" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"/></code>
+<code><img height="32" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Js"/></code>
 
-## Skills Utilizadas:
-<code><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" width=32px height=32px/></code>
-<code><img height="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="HTML5"/></code>
-<code><img height="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" alt="CSS"/></code>
-
-## Projeto:
+## 💣 Project:
 <img src="media/Minesweeper-example.png" alt="Minesweeper-example-image">
 
->Foto Campo Minado
+>Minesweeper picture
 
-Campo minado criando com a utilização de javascript puro (vanilla) e corporizado com HTML e CSS.
-Background e funções simulando ao Windows XP para nos trazer aquela nostalgia.
+## 🚀 Project logs and upgrades
 
-Para ver o projeto hospedado, acesse:
+This project still being developed...
+
+- [x] Interface of Windows XP created.
+- [x] 'Minimize' and 'Close' functions created for "app window"
+- [x] Minesweeper
+- [ ] Start Menu
+- [ ] Multi-task opening apps
+
+🎉To see my project on live, please access:
 
 https://amerele.github.io/mine-sweeper-JS/
 
-[⬆ Voltar ao topo](#nome-do-projeto)<br>
