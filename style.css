@@ -53,6 +53,7 @@ body {
 .iniciar {
     align-items: center;
     font-size: 16pt;
+    padding: 0px 4px;
     width: 110px;
     height: 100%;
     background: linear-gradient(to top right, #1b741b, #1c861c);
@@ -62,6 +63,32 @@ body {
 .iniciar img {
     width: 28px;
     margin-right: 5px;
+}
+.start-menu{
+    position: absolute;
+    bottom: 38px;
+    left: 0;
+    width: 400px;
+    height: 440px;
+    color: black;
+    display: none;
+    flex-direction: column;
+}
+.start-menu .username{
+    background:linear-gradient(#3980f4, #3e8ae7);
+    padding: 20px 8px;
+    position: relative;
+    top: 16px;
+}
+.start-menu .left{
+    background-color: #fff;
+    height: 360px;
+    width: 50%;
+}
+.start-menu .right{
+    background-color: #d3e5fa;
+    height: 360px;
+    width: 50%;
 }
 
 .minesweeper { /* Indicador de janela na barra de tarefas */
@@ -109,8 +136,8 @@ body {
 }
 
 .minimizado {
-    transform: translate(-120%, 100%);
-    opacity: 0;
+    transform: translate(-150%, 150%);
+    opacity: 0
 }
 
 .exit { 

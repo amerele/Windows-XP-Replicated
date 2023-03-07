@@ -17,7 +17,7 @@ let time = new Date();
 const init = (dificuldade) => {
   tabela.onclick = clicar;
   tabela.oncontextmenu = bandeirinha;
-  timer.innerHTML = ` ${time.getHours()}:${time.getMinutes()}`
+  timer.innerHTML = ` ${time.getHours()}:${time.getMinutes() < 10 ? '0'+time.getMinutes(): time.getMinutes()}`
   novoJogo();
   criarBombas();
   gerarNumeros();
@@ -44,6 +44,7 @@ abrir.ondblclick = (event) => {
 
 }
 const minimiza = () => {
+  console.log('');
   if (minimizado == false) {
     document.querySelector('.cont').classList.add('minimizado')
     minimizado = true
@@ -51,7 +52,7 @@ const minimiza = () => {
     document.querySelector('.cont').classList.remove('minimizado')
     minimizado = false
   }
-  console.log(time.getHours(), time.getMinutes)
+
 }
 
 document.querySelector('.container').onclick = () => {
@@ -64,7 +65,7 @@ minimizar.onclick = minimiza
 janela.onclick = minimiza
 
 
-//GFunções Campo Minado
+//Funções Campo Minado
 
 const novoJogo = () => {
   let tbody = "";
