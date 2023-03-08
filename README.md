@@ -24,6 +24,5 @@ This project still being developed...
 - [ ] Multi-task opening apps
 
 🎉To see my project on live, please access:
-
-https://amerele.github.io/mine-sweeper-JS/
+https://amerele.github.io/Windows-XP-Replicated/
 
