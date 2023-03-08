@@ -23,6 +23,6 @@ This project still being developed...
 - [ ] Start Menu
 - [ ] Multi-task opening apps
 
-🎉To see my project on live, please access:
+🎉To see my project on live, please access: <br>
 https://amerele.github.io/Windows-XP-Replicated/
 
